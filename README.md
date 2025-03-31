@@ -10,17 +10,17 @@
 4. VS Code (with the MongoDB extension for viewing the database)
 
 ## How to Run
-**Step 1: Setup Instruction**
-`git clone https://github.com/MahekP235/IP_Extractor.git`
-`cd IT_EXTRACTOR`
+### **Step 1: Setup Instruction**
+1. `git clone https://github.com/MahekP235/IP_Extractor.git`
+2. `cd IT_EXTRACTOR`
 
-**Step 2: Build and Run**
+### **Step 2: Build and Run**
 Open the terminal and navigate to the project directory. Then run the following commands:
-`docker-compose down --remove-orphans` (optional)
-`docker-compose build --no-cache`
-`docker-compose up app`
+1. `docker-compose down --remove-orphans` (optional)
+2. `docker-compose build --no-cache`
+3. `docker-compose up app`
 
-**Step 3: Verification**
-`docker-compose exec mongo mongosh ip_database --eval "db.public_ips.find()"`
-`docker-compose exec mongo mongosh ip_database --eval "db.private_ips.find()"`
+### **Step 3: Verification**
+1. `docker-compose exec mongo mongosh ip_database --eval "db.public_ips.find()"`
+2. `docker-compose exec mongo mongosh ip_database --eval "db.private_ips.find()"`
 
