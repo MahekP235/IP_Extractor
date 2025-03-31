@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+      - ./logs:/logs  # Mount log directory
+    depends_on:
+      - mongo
+    command: python -m app.main /logs/test.log
+  mongo:
+    image: mongo:latest  # or mongo:6.0 for explicit version
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo_data:/data/db  # Persist MongoDB data
+
+volumes:
+  mongodb_data:

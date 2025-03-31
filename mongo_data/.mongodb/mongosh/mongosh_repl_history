@@ -1,0 +1,32 @@
+db.private_ips.find().pretty()
+db.public_ips.find().pretty()
+db.public_ips.find()
+db.private_ips.find()
+clear
+db.private_ips.deleteMany({})
+db.public_ips.deleteMany({})
+db.publik_ips.deleteMany({})
+db.coll.deleteMany({})
+db.public_ips.find()
+db.private_ips.find()
+db.collection.drop()
+db.collection.deleteMany()
+db.private_ips.find()
+db.public_ips.find()
+clear
+db.private_ips.find() 
+db.public_ips.find() 
+use ip_database
+db.private_ips.insertOne({ ip: "192.168.1.1", location: "India" })
+db.private_ips.find()
+db.private_ips.insertOne({ ip: "192.168.1.1", location: "India" })
+db.private_ips.find()
+db.public_ips.find()
+db.public_ips.insertOne({ ip: "192.168.1.1", location: "India" })
+db.public_ips.find()
+db.public_ips.find()     // Query data
+use ip_database          // Switch to your database
+exit
+db.private_ips.find()
+db.public_ips.find()
+use ip_database
